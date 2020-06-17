@@ -1,0 +1,1208 @@
+[
+    {
+        "id": "c16c79ac.7bba08",
+        "type": "tab",
+        "label": "Flow original",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1d9bab84.1af424",
+        "type": "tab",
+        "label": "Lights control",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1a5a5803.8c10b8",
+        "type": "ibmiot",
+        "z": "",
+        "name": "IOT-Main",
+        "keepalive": "60",
+        "serverName": "gmtoy9.messaging.internetofthings.ibmcloud.com/",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "41e9ad36.7dd854",
+        "type": "ui_group",
+        "z": "",
+        "name": "Dashboard",
+        "tab": "62f70673.26c608",
+        "order": 1,
+        "disp": true,
+        "width": "19",
+        "collapse": false
+    },
+    {
+        "id": "62f70673.26c608",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "494f1fa0.2df7b",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "true",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6c1218f8.91c4a8",
+        "type": "ibmiot",
+        "z": "",
+        "name": "controllable-devices",
+        "keepalive": "60",
+        "serverName": "40z6hv.messaging.internetofthings.ibmcloud.com",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "983998c8.e06e68",
+        "type": "ui_group",
+        "z": "c16c79ac.7bba08",
+        "name": "Click",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "5"
+    },
+    {
+        "id": "870239b9.370f28",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Controls",
+        "icon": "adjust",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "28c05254.e93fbe",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "70ecfd7b.0085c4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "28c05254.e93fbe",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "646efdc3.ba02e4",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "893d8e01.2067b",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "gmtoy9.messaging.internetofthings.ibm.com",
+        "port": "8883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "7be5a4d8.e18c6c",
+        "type": "ui_group",
+        "z": "",
+        "name": "www",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "35"
+    },
+    {
+        "id": "5f294de7.391044",
+        "type": "ui_group",
+        "z": "c16c79ac.7bba08",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "40e1e49.7f2001c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Tests",
+        "tab": "cd088de3.12348",
+        "order": 2,
+        "disp": true,
+        "width": "12"
+    },
+    {
+        "id": "f2a50817.959ef8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Car Data",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "cd1de44b.89e658",
+        "type": "ui_group",
+        "z": "",
+        "name": "Car Data",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "de9d65e1.052808",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "26828283.e10cfe",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "fc7f4064.40e68",
+        "type": "ui_group",
+        "z": "",
+        "name": "Controls",
+        "tab": "870239b9.370f28",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "64a7c737.d43fc8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "ec35561.93219a8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9b0e95e3.395668",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 5,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "d8bb889b.134a28",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3f5e18fa.96eab8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 8,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "3e16e1b4.a7ed6e",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "f3e0fbe5.5c2308",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 10,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "1a40799.a352086",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "596c2b56.f7efe4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 12,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "a608fffd.dbf58",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3c0f2987.9af636",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 14,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "b1485e56.ee41e",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 15,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "fc42aae2.0ef4c8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 16,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "77b9da75.ee5714",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 17,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "971dc03a.36ccd",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 18,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "f0921e0.4b8e9e",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 19,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "c7730cbf.07cf9",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 20,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "42739914.d12d58",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 21,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "587e5bbb.a49aa4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 22,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "c0a337b5.9d4cd8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 23,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "adcba66a.7f40c8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 24,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "b9eb3da9.4d4a9",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 25,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "8931e0b7.dfb7f",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 26,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "fc6c8bf4.70e408",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 27,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "2415e8a3.6d5cf8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 28,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "1093fb92.c555e4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 29,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "7a74e69e.6b6ae8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 30,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "991737e8.4727c8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 31,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "6e72cd1a.b46914",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 32,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "27e2bfa1.e69b2",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 33,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "50088c33.e1ac04",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fc7f4064.40e68",
+        "order": 34,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "f6d9117e.39e1d",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 1,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "a0f2f5ca.dad438",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "8af64dba.300e1",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e8dfd185.ce19d",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ddcfad7f.ee312",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3ae97e20.b74732",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d945e87c.ed4b18",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aac5aa93.27d478",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3964ae1.28cd752",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "68293783.8cdd78",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f004b537.87f668",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ce1412a.8c3e1f",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "41e9ad36.7dd854",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f3ce91a1.ac885",
+        "type": "ibmiot in",
+        "z": "c16c79ac.7bba08",
+        "authentication": "apiKey",
+        "apiKey": "1a5a5803.8c10b8",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "iotDevice1",
+        "applicationId": "",
+        "deviceType": "iotDevice1",
+        "eventType": "+",
+        "commandType": "Data",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": true,
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": false,
+        "allCommands": false,
+        "allFormats": false,
+        "qos": "1",
+        "x": 87,
+        "y": 140.00000190734863,
+        "wires": [
+            [
+                "171cac9d.c44f03",
+                "f2f0c29e.b4388"
+            ]
+        ]
+    },
+    {
+        "id": "aabfa477.623658",
+        "type": "debug",
+        "z": "c16c79ac.7bba08",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 741.0000152587891,
+        "y": 80.00000190734863,
+        "wires": []
+    },
+    {
+        "id": "171cac9d.c44f03",
+        "type": "function",
+        "z": "c16c79ac.7bba08",
+        "name": "temperature",
+        "func": "msg.payload = msg.payload.d.temperature\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 470,
+        "y": 100,
+        "wires": [
+            [
+                "aabfa477.623658",
+                "d0797d2.ca0e98",
+                "c2982514.781b68"
+            ]
+        ]
+    },
+    {
+        "id": "f2f0c29e.b4388",
+        "type": "function",
+        "z": "c16c79ac.7bba08",
+        "name": "humidity",
+        "func": "msg.payload = msg.payload.d.humidity\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 460,
+        "y": 220,
+        "wires": [
+            [
+                "aabfa477.623658",
+                "f1aaea1c.c9d668",
+                "b667051e.953238"
+            ]
+        ]
+    },
+    {
+        "id": "d0797d2.ca0e98",
+        "type": "ui_gauge",
+        "z": "c16c79ac.7bba08",
+        "name": "",
+        "group": "41e9ad36.7dd854",
+        "order": 6,
+        "width": 9,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 773.0000114440918,
+        "y": 123.00000190734863,
+        "wires": []
+    },
+    {
+        "id": "f1aaea1c.c9d668",
+        "type": "ui_gauge",
+        "z": "c16c79ac.7bba08",
+        "name": "",
+        "group": "41e9ad36.7dd854",
+        "order": 4,
+        "width": 9,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 776.0000076293945,
+        "y": 164.00000381469727,
+        "wires": []
+    },
+    {
+        "id": "145f6a5e.a2ed16",
+        "type": "ibmiot out",
+        "z": "1d9bab84.1af424",
+        "authentication": "apiKey",
+        "apiKey": "6c1218f8.91c4a8",
+        "outputType": "cmd",
+        "deviceId": "lights",
+        "deviceType": "controllable-device",
+        "eventCommandType": "command",
+        "format": "json",
+        "data": "lights",
+        "qos": "1",
+        "name": "IBM IoT",
+        "service": "registered",
+        "x": 755,
+        "y": 160,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "657bfc9.3ea2704",
+        "type": "ibmiot in",
+        "z": "1d9bab84.1af424",
+        "authentication": "apiKey",
+        "apiKey": "6c1218f8.91c4a8",
+        "inputType": "cmd",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "lights",
+        "applicationId": "",
+        "deviceType": "controllable-device",
+        "eventType": "+",
+        "commandType": "command",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": "",
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": "1",
+        "x": 155,
+        "y": 160,
+        "wires": [
+            [
+                "bd518166.b589d"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "83f5435.66d1ec",
+        "type": "ui_switch",
+        "z": "1d9bab84.1af424",
+        "name": "switch-light",
+        "label": "{{txt}}",
+        "tooltip": "",
+        "group": "fc7f4064.40e68",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "switch-light",
+        "style": "",
+        "onvalue": "{\"lights\":1}",
+        "onvalueType": "json",
+        "onicon": "lightbulb",
+        "oncolor": "{{colorOn}}",
+        "offvalue": "{\"lights\":0}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "{{colorOff}}",
+        "x": 535,
+        "y": 160,
+        "wires": [
+            [
+                "145f6a5e.a2ed16"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "bd518166.b589d",
+        "type": "function",
+        "z": "1d9bab84.1af424",
+        "name": "",
+        "func": "msg.colorOn = \"#f1fa43\";\nmsg.colorOff = \"#969c25\";\nif(msg.payload.lights) {\n    msg.txt=\"Lights ON. Turn off?\";\n} else if(!msg.payload.lights) {\n    msg.txt=\"Lights OFF. Turn on?\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 335,
+        "y": 160,
+        "wires": [
+            [
+                "83f5435.66d1ec"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f3c2ac43.6ef94",
+        "type": "ui_template",
+        "z": "1d9bab84.1af424",
+        "group": "fc7f4064.40e68",
+        "name": "",
+        "order": 7,
+        "width": 17,
+        "height": 14,
+        "format": "<div id=\"controller\" ng-bind-html=\"msg.payload | trusted\"></div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 712.4000091552734,
+        "y": 209.00000286102295,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "449f2b9.33253d4",
+        "type": "template",
+        "z": "1d9bab84.1af424",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!-- <script> \n// // <iframe src=\"https://watson-iot-sensor-simulator.mybluemix.net\" style=\"height:600%; width:100%\" ></iframe>\n// let elem = document.createElement(\"iframe\");\n// console.log(\"node-created\");\n// elem.style = \"width:100%; height:500%\";\n// elem.id = \"controller-iframe\";\n// document.getElementById(\"controller\").appendChild(elem)\n// elem.src = \"https://watson-iot-sensor-simulator.mybluemix.net\";\n// //Controls_Load-Sensor_Control_cards\n// let button = document.createElement(\"button\");\n// button.id = \"example\";\n// button.onClick = \"function(event){console.log(event);}\";\n// // let trial_button = document.body.insertBefore(button, document.getElementById(\"controller\"));\n// let trial_button = document.getElementById(\"Controls_Load-Sensor_Control_cards\").insertBefore(button, document.getElementsByClassName(\"nr-dashboard-template ng-scope _md visible\")[0]);\n</script> -->\n\n<iframe id=\"controllerIframe\" src=\"https://watson-iot-sensor-simulator.mybluemix.net\" style=\"height:500%; width:100%\" >\n<button id=\"fillFormButton\" onclick =\"fillForm(event)\">Fill Form</button>\n<script>\n    function fillForm(event) {\n        console.log(document.getElementById('controllerIframe'));\n    }\n</script>\n</iframe>",
+        "x": 421.40003204345703,
+        "y": 211.00000286102295,
+        "wires": [
+            [
+                "f3c2ac43.6ef94"
+            ]
+        ]
+    },
+    {
+        "id": "a3a04020.20055",
+        "type": "ui_ui_control",
+        "z": "1d9bab84.1af424",
+        "name": "",
+        "events": "all",
+        "x": 155.60000324249268,
+        "y": 217.20000457763672,
+        "wires": [
+            [
+                "449f2b9.33253d4"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b667051e.953238",
+        "type": "ui_chart",
+        "z": "c16c79ac.7bba08",
+        "name": "",
+        "group": "41e9ad36.7dd854",
+        "order": 11,
+        "width": 9,
+        "height": 6,
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "Liine graph for humidity",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 737.6000127792358,
+        "y": 249.600004196167,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "c2982514.781b68",
+        "type": "ui_chart",
+        "z": "c16c79ac.7bba08",
+        "name": "",
+        "group": "41e9ad36.7dd854",
+        "order": 13,
+        "width": 9,
+        "height": 6,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "bezier",
+        "nodata": "Liine graph for temperature",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "60",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 746.0000133514404,
+        "y": 205,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "b9fee74c.6ce688",
+        "type": "ui_switch",
+        "z": "c16c79ac.7bba08",
+        "name": "",
+        "label": "{{txt}}",
+        "tooltip": "",
+        "group": "41e9ad36.7dd854",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "switch-tab",
+        "style": "",
+        "onvalue": "{\"tab\":1}",
+        "onvalueType": "json",
+        "onicon": "wrench",
+        "oncolor": "",
+        "offvalue": "{\"tab\":0}",
+        "offvalueType": "json",
+        "officon": "desktop",
+        "offcolor": "",
+        "x": 220.00000762939453,
+        "y": 70.0000057220459,
+        "wires": [
+            [
+                "785e6149.94a8e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "785e6149.94a8e",
+        "type": "ui_ui_control",
+        "z": "c16c79ac.7bba08",
+        "name": "",
+        "events": "change",
+        "x": 202.00005626678467,
+        "y": 38.0000057220459,
+        "wires": [
+            [
+                "55f82929.5ba798"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "55f82929.5ba798",
+        "type": "function",
+        "z": "c16c79ac.7bba08",
+        "name": "",
+        "func": "if(msg.tab === 1) {\n    msg.txt = \"Switch to dashboard\";\n    msg.payload = {\"tab\":msg.tab};\n    return msg;\n} else if(msg.tab === 0) {\n    msg.txt = \"Switch to controller\";\n    msg.payload = {\"tab\":msg.tab};\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 178.00000667572021,
+        "y": 71.0000057220459,
+        "wires": [
+            [
+                "b9fee74c.6ce688"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "13f085de.f2d56a",
+        "type": "ui_switch",
+        "z": "1d9bab84.1af424",
+        "name": "",
+        "label": "{{txt}}",
+        "tooltip": "",
+        "group": "fc7f4064.40e68",
+        "order": 4,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "switch-tab",
+        "style": "",
+        "onvalue": "{\"tab\":1}",
+        "onvalueType": "json",
+        "onicon": "wrench",
+        "oncolor": "",
+        "offvalue": "{\"tab\":0}",
+        "offvalueType": "json",
+        "officon": "desktop",
+        "offcolor": "",
+        "x": 502.00000762939453,
+        "y": 426.0000057220459,
+        "wires": [
+            [
+                "e3c4051c.a52168"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "e3c4051c.a52168",
+        "type": "ui_ui_control",
+        "z": "1d9bab84.1af424",
+        "name": "",
+        "events": "change",
+        "x": 435.00005626678467,
+        "y": 328.00000381469727,
+        "wires": [
+            [
+                "5e92949c.c7015c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "5e92949c.c7015c",
+        "type": "function",
+        "z": "1d9bab84.1af424",
+        "name": "",
+        "func": "if(msg.tab === 1) {\n    msg.txt = \"Switch to dashboard\";\n    msg.payload = {\"tab\":msg.tab};\n    return msg;\n} else if(msg.tab === 0) {\n    msg.txt = \"Switch to controller\";\n    msg.payload = {\"tab\":msg.tab};\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 391.0000030994415,
+        "y": 425,
+        "wires": [
+            [
+                "13f085de.f2d56a"
+            ]
+        ],
+        "l": false
+    }
+]
